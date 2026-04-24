@@ -35,5 +35,5 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/incident-api:${{ github.sha }}
-            ghcr.io/${{ github.repository_owner }}/incident-api:latest
+            ${{ secrets.DOCKER_IMAGE }}:${{ github.sha }}
+            ${{ secrets.DOCKER_IMAGE }}:latest
